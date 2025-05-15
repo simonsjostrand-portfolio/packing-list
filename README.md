@@ -51,7 +51,7 @@ A simple, interactive packing list application built with vanilla JavaScript. Pl
 
 ## 📸 Demo
 
-[Demo here](https://your-username.github.io/packing-list/)
+[Demo here](https://simonsjostrand-portfolio.github.io/packing-list/)
 
 ---
 
