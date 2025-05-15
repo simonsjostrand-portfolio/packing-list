@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <script src="src/main.js" type="module"></script>
+
+    <title>Packing List</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <form class="packing-form">
+          <h1 class="form-heading">Packing List 🏖️</h1>
+          <div class="inputs-wrapper">
+            <div class="input-wrapper">
+              <label id="name-label" for="name">Item:</label>
+              <input id="item-input" name="name" type="text" />
+            </div>
+            <div class="input-wrapper">
+              <label id="quantity-label" for="quantity">Amount:</label>
+              <select id="quantity" name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn-add">Add to list</button>
+        </form>
+
+        <!-- Packing list -->
+        <ul class="packing-list"></ul>
+      </main>
+
+      <footer>
+        © 2025 Simon Sjöstrand
+        <p>•</p>
+        <a href="https://github.com/simonsjostrand-portfolio">GitHub</a>
+      </footer>
+    </div>
+  </body>
+</html>
