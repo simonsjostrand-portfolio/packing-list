@@ -46,6 +46,22 @@ const fetchItemImage = async function (query, quantity) {
 };
 
 // Event handlers
+const handleSubmit = e => {
+  e.preventDefault();
+
+  const query = inputItem.value;
+  const quantity = quantityEl.value;
+
+  fetchItemImage(query, quantity);
+  resetInputs(formPacking, inputItem);
+};
+
+const handleDeleteItem = e => {
+  if (e.target.classList.contains('btn-delete')) {
+    e.target.closest('.list-item').remove();
+  }
+};
+
 const togglePackedState = e => {
   if (e.target.classList.contains('btn-packed')) {
     const itemWrapper = e.target
@@ -55,22 +71,6 @@ const togglePackedState = e => {
     const isPacked = itemWrapper.classList.toggle('packed');
     e.target.textContent = isPacked ? 'Unpack' : 'Packed';
   }
-};
-
-const handleDeleteItem = e => {
-  if (e.target.classList.contains('btn-delete')) {
-    e.target.closest('.list-item').remove();
-  }
-};
-
-const handleSubmit = e => {
-  e.preventDefault();
-
-  const query = inputItem.value;
-  const quantity = quantityEl.value;
-
-  fetchItemImage(query, quantity);
-  resetInputs(formPacking, inputItem);
 };
 
 // Event listeners
